@@ -1,0 +1,26 @@
+{% extends 'common.html' %}
+
+{% block soumya %}
+
+
+<form method='post' enctype='multipart/form-data'>
+    {% csrf_token %}
+      <table align='center' border='2'>
+        <tr><th colspan='2'><h1>Insert Record</h1></th></tr>
+        
+                {{form}}
+          
+        <tr>
+            <th colspan='2'>
+                <center><button type='submit'>save</button></center>
+            </th>
+        </tr>
+    </table>
+</form>
+{% if messages %}
+     {% for x in messages %}
+          <h1>{{x}}</h1>
+      {% endfor %}    
+
+{% endif %}
+{% endblock %}                   

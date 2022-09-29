@@ -1,0 +1,43 @@
+{% extends 'common.html' %}
+
+{% block soumya %}
+
+      <table align='center' border='2' width='800'px>
+        <tr><th colspan='7'>
+            <center><h1>All Record</h1>
+            </center></th></tr>
+        <tr>
+            <th>Course Id</th>
+            <th>Course Name</th>
+            <th>Course Fees</th>
+            <th>Course Faculty</th>
+            <th>Faculty Image</th>
+            <th>Course Update</th>
+            <th>Course Delete</th>
+        </tr> 
+        {% for x in object_list %} 
+        <tr>
+            <th>{{x.id}}</th>
+            <th>{{x.course}}</th>
+            <th>{{x.fees}}</th>
+            <th>{{x.faculty}}</th>
+            <th><img src={{x.image.url}}</th>
+            <th><a href="{% url 'update' x.id %}">
+                UPDATE
+                </a>
+            </th> 
+            <th><a href="{% url 'delete' x.id %}">
+                DELETE
+                </a>
+            </th>    
+        </tr>    
+        {% endfor %}
+    </table>
+</form>
+{% if messages %}
+     {% for x in messages %}
+          <h1>{{x}}</h1>
+      {% endfor %}    
+
+{% endif %}
+{% endblock %}                   

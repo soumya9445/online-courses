@@ -1,0 +1,71 @@
+{% extends 'common.html' %}
+
+{% block soumya %}
+{% load static %}
+     <table align='center' border='2'>
+        <tr>
+            <th>
+                <img src="{% static 'images\python1.png' %}" width=300 px height=200 px>
+                   <h4>Faculty:mr.naveen</h4>
+                   <h4>fees:5000.00</h4>
+                   <h4>duration:45 days</h4>
+                   <h3><a href="{% url 'click' %}">Register</a></h3>
+            </th> 
+            <th>
+                <img src="{% static 'images\django1.png' %}" width=300 px height=200 px>
+                   <h4>Faculty:mr.naveen</h4>
+                   <h4>fees:6000.00</h4>
+                   <h4>duration:60 days</h4>
+                   <h3><a href="{% url 'click' %}">Register</a></h3>
+            </th> 
+            <th>
+                <img src="{% static 'images\java1.png' %}" width=300 px height=200 px>
+                   <h4>Faculty:mr.durga</h4>
+                   <h4>fees:5000.00</h4>
+                   <h4>duration:90 days</h4>
+                   <h3><a href="{% url 'click' %}">Register</a></h3>
+            </th> 
+            <th>
+                <img src="{% static 'images\c#.png' %}" width=300 px height=200 px>
+                   <h4>Faculty:mr.kanhababu</h4>
+                   <h4>fees:5000.00</h4>
+                   <h4>duration:60 days</h4>
+                   <h3><a href="{% url 'click' %}">Register</a></h3>
+            </th> 
+            
+        </tr>
+        <tr>
+            <th>
+                <img src="{% static 'images\sql.png' %}" width=300 px height=200 px>
+                   <h4>Faculty:mr.raju</h4>
+                   <h4>fees:3000.00</h4>
+                   <h4>duration:45 days</h4>
+                   <h3><a href="{% url 'click' %}">Register</a></h3>
+            </th> 
+            <th>
+                <img src="{% static 'images\ui.png' %}" width=300 px height=200 px>
+                   <h4>Faculty:mr.shiba</h4>
+                   <h4>fees:3000.00</h4>
+                   <h4>duration:60 days</h4>
+                   <h3><a href="{% url 'click' %}">Register</a></h3>
+            </th> 
+            <th>
+                <img src="{% static 'images\devops.png' %}" width=300 px height=200 px>
+                   <h4>Faculty:mr.ashok</h4>
+                   <h4>fees:10000.00</h4>
+                   <h4>duration:90 days</h4>
+                   <h3><a href="{% url 'click' %}">Register</a></h3>
+            </th> 
+            <th>
+                <img src="{% static 'images\ai.png' %}" width=300 px height=200 px>
+                   <h4>Faculty:mr.sasmita</h4>
+                   <h4>fees:10000.00</h4>
+                   <h4>duration:90 days</h4>
+                   <h3><a href="{% url 'click' %}">Register</a></h3>
+            </th> 
+            
+        </tr>
+
+
+
+{% endblock %}

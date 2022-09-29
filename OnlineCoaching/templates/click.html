@@ -1,0 +1,15 @@
+{% extends 'common.html' %}
+
+{% block soumya %}
+{% load static %}
+        <center><img src="{% static 'images\ok logo.png' %}" width='500' px height='300' px></center>
+
+{% if messages %}
+     {% for x in messages %}
+       <h1>{{x}}</h1>
+
+     {% endfor %}
+
+{% endif %}
+
+{% endblock %}

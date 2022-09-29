@@ -1,0 +1,34 @@
+{% extends 'common.html' %}
+
+{% block soumya %}
+       <table align='center' border='2' width='300' px>
+        <tr><th colspan='2'><center><h2>Delete Record</h1></center></th></tr>
+        <tr>
+            <th>Course Id</th><th>{{object.id}}</th>
+        </tr>
+        <tr>    
+            <th>Course Name</th><th>{{object.course}}</th>
+        </tr>
+        <tr>    
+            <th>Course Fees</th><th>{{object.fees}}</th>
+        </tr>
+        <tr>    
+            <th>Course Faculty</th><th>{{object.faculty}}</th>
+        </tr>
+        <tr>    
+            <th>Faculty Image</th><th><img src="{{object.image.url}}"></th>
+        </tr> 
+        <tr>
+        <th>
+        <form method='post' enctype='multipart/form-data'>
+            {% csrf_token %}
+            
+            <button type='submit'>yes</button>
+        </form>  
+    </th>
+    <th>
+    <a href="{% url 'view_page' %}">
+        NO
+    </th>
+</tr>  
+{% endblock%}

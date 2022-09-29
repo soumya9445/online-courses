@@ -1,0 +1,29 @@
+{% extends 'common.html' %}
+
+
+{% block soumya  %}
+<html>
+        <body bgcolor:'red'>
+
+   <form action= " " method='post'>
+    {% csrf_token %}
+       <table align='center' border='0'>
+         <tr>
+             <th>
+                 <h1 style='font-size:50 px;font-family:Agency-fb;color:black;background-color:red'> Admin Login Page</h1>
+             </th>     
+        </tr>
+        <tr><th>
+                {{form1.as_p}}
+        </th>
+        </tr>        
+        <tr><th><button type='submit'>login </button></th></tr>
+        </table>
+    
+
+    </form>    
+</body>
+</html>
+
+
+{% endblock %}
